@@ -1,8 +1,10 @@
 # Generate fortunes using OpenAI gpt-2
 
- larger models, we have [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
+Generate fortunes using OpenAI GPT-2 training model with training performed on a Sagemaker GPU instance
 
-See more details on OpenAI blog (https://blog.openai.com/better-language-models/). Original README.md is based on GPT2-README.md
+See more details on OpenAI blog (https://blog.openai.com/better-language-models/). 
+
+Original README.md is based on GPT2-README.md
 
 ## Notebook
 
