@@ -1,28 +1,37 @@
-# gpt-2
+# Generate fortunes using OpenAI gpt-2
 
-Code from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
+ larger models, we have [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
 
-We have currently released small (117M parameter) and medium (345M parameter) versions of GPT-2.  While we have not released the larger models, we have [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
+See more details on OpenAI blog (https://blog.openai.com/better-language-models/). Original README.md is based on GPT2-README.md
 
-See more details in our [blog post](https://blog.openai.com/better-language-models/).
+## Notebook
 
-## Usage
+```bash
+jupyter-notebook futurebox-notebook.ipynb
+```
 
-This repository is meant to be a starting point for researchers and engineers to experiment with GPT-2.
+### Dataset 
 
-### Some caveats
+Download the dataset and store in S3. 
 
-- GPT-2 models' robustness and worst case behaviors are not well-understood.  As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important.
-- The dataset our GPT-2 models were trained on contains many texts with [biases](https://twitter.com/TomerUllman/status/1101485289720242177) and factual inaccuracies, and thus GPT-2 models are likely to be biased and inaccurate as well.
-- To avoid having samples mistaken as human-written, we recommend clearly labeling samples as synthetic before wide dissemination.  Our models are often incoherent or inaccurate in subtle ways, which takes more than a quick read for a human to notice.
+### AWS IAM Role 
+
+Create new IAM role, AWS Permissions: Sagem
+
+### AWS Sagemaker
+
+Recommended GPU instance type ```ml.p2.xlarge ```
+
+Create new code repository in Sagemaker
+
+```bash
+aws sagemaker create-code-repository \
+    --code-repository-name "t04glovern-gpt-2" \
+    --git-config '{"Branch":"master", "RepositoryUrl" : "https://github.com/t04glovern/fbmsg-analysis-gpt-2" }'
+```
 
 ### Work with us
 
 Please [let us know](mailto:languagequestions@openai.com) if you’re doing interesting research with or working on applications of GPT-2!  We’re especially interested in hearing from and potentially working with those who are studying
 - Potential malicious use cases and defenses against them (e.g. the detectability of synthetic text)
 - The extent of problematic content (e.g. bias) being baked into the models and effective mitigations
-
-
-## License
-
-[MIT](./LICENSE)
