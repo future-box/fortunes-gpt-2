@@ -38,7 +38,7 @@ Create Sagemaker notebook instance
 
 ```bash
 aws sagemaker create-notebook-instance \
-    --notebook-instance-name "fbmsg-gpt-2" \
+    --notebook-instance-name "fortunes-gpt-2" \
     --instance-type "ml.p2.xlarge" \
     --role-arn "COPY/PASTE your ARN from IAM role created above" \
     --default-code-repository "ai-fortune-teller"
