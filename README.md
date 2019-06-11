@@ -16,7 +16,9 @@ Download the dataset and store in S3.
 
 ### AWS IAM Role 
 
-Create new IAM role, AWS Permissions: Sagem
+Create new IAM role with AWS service permissions: ```AmazonSageMakerFullAccess ```
+
+After creation attach a ```AdministratorAccess ``` policy (only required while training)
 
 ### AWS Sagemaker
 
@@ -26,12 +28,7 @@ Create new code repository in Sagemaker
 
 ```bash
 aws sagemaker create-code-repository \
-    --code-repository-name "t04glovern-gpt-2" \
-    --git-config '{"Branch":"master", "RepositoryUrl" : "https://github.com/t04glovern/fbmsg-analysis-gpt-2" }'
+    --code-repository-name "ai-fortune-teller" \
+    --git-config '{"Branch":"finetuning", "RepositoryUrl" : "https://github.com/future-box/fortunes-gpt-2" }'
 ```
 
-### Work with us
-
-Please [let us know](mailto:languagequestions@openai.com) if you’re doing interesting research with or working on applications of GPT-2!  We’re especially interested in hearing from and potentially working with those who are studying
-- Potential malicious use cases and defenses against them (e.g. the detectability of synthetic text)
-- The extent of problematic content (e.g. bias) being baked into the models and effective mitigations
