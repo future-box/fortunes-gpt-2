@@ -24,7 +24,7 @@ After creation attach a ```AdministratorAccess ``` policy (only required while t
 
 ### AWS Sagemaker
 
-Recommended GPU instance type ```ml.p2.xlarge ```
+Recommended notebook instance type ```ml.p2.xlarge ```
 
 Create new code repository in Sagemaker
 
