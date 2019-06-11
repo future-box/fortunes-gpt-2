@@ -48,8 +48,6 @@ aws sagemaker create-notebook-instance \
 
 Open Sagemaker notebook in Jupyter or JupyterLab and open file ```futurebox-notebook.ipynb```
 
-Updated your bucket folder / file path in notebook file
-
-Run
+Update your bucket folder / file path in notebook file and run all cells
 
 
