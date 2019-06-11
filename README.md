@@ -1,4 +1,4 @@
-# Generate fortunes using OpenAI gpt-2
+# Generate fortunes using OpenAI GPT-2
 
 Generate fortunes using OpenAI GPT-2 training model with training performed on a Sagemaker GPU instance
 
