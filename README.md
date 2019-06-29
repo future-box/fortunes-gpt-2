@@ -46,7 +46,7 @@ aws sagemaker create-notebook-instance \
 
 ### Run notebook
 
-Open Sagemaker notebook in Jupyter or JupyterLab and open file ```futurebox-notebook.ipynb```
+Open Sagemaker notebook in Jupyter or JupyterLab and open file ```cookies-notebook.ipynb```
 
 Update your bucket folder / file path in notebook file and run all cells
 
