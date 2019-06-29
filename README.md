@@ -14,7 +14,7 @@ jupyter-notebook cookies-notebook.ipynb
 
 ### Dataset 
 
-Download the [dataset](https://1drv.ms/u/s!Am_sjR_8EI6HaiSzSnUzVfJ2xvI?e=FzyA76) and store in S3. 
+Download the sample [dataset](https://1drv.ms/u/s!Am_sjR_8EI6HaiSzSnUzVfJ2xvI?e=FzyA76) and store in S3. 
 
 ### AWS IAM Role 
 
