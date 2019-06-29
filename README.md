@@ -31,7 +31,7 @@ Create new code repository in Sagemaker
 ```bash
 aws sagemaker create-code-repository \
     --code-repository-name "ai-fortune-teller" \
-    --git-config '{"Branch":"finetuning", "RepositoryUrl" : "https://github.com/future-box/fortunes-gpt-2" }'
+    --git-config '{"Branch":"finetuning", "RepositoryUrl" : "https://github.com/superintelligentcookies/fortunes-gpt-2" }'
 ```
 
 Create Sagemaker notebook instance
