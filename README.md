@@ -9,7 +9,7 @@ Original README.md is based on GPT2-README.md
 ## Notebook
 
 ```bash
-jupyter-notebook futurebox-notebook.ipynb
+jupyter-notebook cookies-notebook.ipynb
 ```
 
 ### Dataset 
